@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>平台管理</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta content="" name="description"/>
+    <meta content="" name="author"/>
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="__PUBLIC__/assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="__PUBLIC__/assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
+    <link href="__PUBLIC__/assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="__PUBLIC__/assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css"/>
+    <link href="__PUBLIC__/assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css"/>
+    <!-- END GLOBAL MANDATORY STYLES -->
+    <!-- BEGIN PAGE LEVEL STYLES -->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/assets/global/plugins/select2/select2.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/assets/global/plugins/datatables/extensions/Scroller/css/dataTables.scroller.min.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/assets/global/plugins/datatables/extensions/ColReorder/css/dataTables.colReorder.min.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.css"/>
+    <!-- END PAGE LEVEL STYLES -->
+    <!-- BEGIN THEME STYLES -->
+    <link href="__PUBLIC__/assets/global/css/components.css" id="style_components" rel="stylesheet" type="text/css"/>
+    <link href="__PUBLIC__/assets/global/css/plugins.css" rel="stylesheet" type="text/css"/>
+    <link href="__PUBLIC__/assets/admin/layout/css/layout.css" rel="stylesheet" type="text/css"/>
+    <link id="style_color" href="__PUBLIC__/assets/admin/layout/css/themes/darkblue.css" rel="stylesheet" type="text/css"/>
+    <link href="__PUBLIC__/assets/admin/layout/css/custom.css" rel="stylesheet" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script src="__PUBLIC__/assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+    <style>
+        .portlet.light.bordered {
+            border: 0px solid #e1e1e1 !important;
+        }
+    </style>
+</head>
+<body class="page-header-fixed page-quick-sidebar-over-content ">
+<!-- BEGIN HEADER -->
+<include file="Public/head" />
+<!-- END HEADER -->
+<div class="clearfix">
+</div>
+<!-- BEGIN CONTAINER -->
+<div class="page-container">
+    <div class="page-sidebar-wrapper">
+        <div class="page-sidebar navbar-collapse collapse">
+            <ul class="page-sidebar-menu" data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
+                <include file="Public/common" />
+            </ul>
+        </div>
+    </div>
+    <div class="page-content-wrapper">
+        <div class="page-content">
+            <div class="page-bar" style="margin-bottom:20px;margin-top:-10px;">
+                <ul class="page-breadcrumb">
+                    <li>
+                        <i class="fa fa-home"></i>
+                        <a href="__MODULE__/Vido/index">视频管理</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-angle-right"></i>
+                        <small style="color:#888888">视频内容预览</small>
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="portlet light portlet-fit portlet-datatable bordered" id="form_wizard_1">
+                        <div class="portlet-title">
+                            <div class="caption">
+                                <i class="fa fa-globe"></i>视频内容预览
+                            </div>
+                        </div>
+                        <div class="portlet-body">
+                            <div class="col-md-6" style="margin-bottom:7px;margin-left:-15px">
+                                    <!--<div class="btn-group">
+                                        <a class="btn green" href="__CONTROLLER__/add">
+                                            添加用户<i class="fa fa-plus"></i>
+                                        </a>
+                                    </div>-->
+                            </div>
+
+                            <video class="video" src="__PUBLIC__/upload/<{$res}>" width="65%" controls preload='metadata' ></video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<include file="Public/foot" />
+
+<script src="__PUBLIC__/assets/global/plugins/respond.min.js"></script>
+<script src="__PUBLIC__/assets/global/plugins/excanvas.min.js"></script>
+<!--pdf js-->
+<script src="__PUBLIC__/assets/uploadify/pdf/pdf.js"></script>
+<!--<script src="__PUBLIC__/assets/uploadify/pdf/pdf.worker.js"></script>-->
+
+<!--[endif]-->
+<script src="__PUBLIC__/assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+<script src="__PUBLIC__/assets/global/plugins/jquery-migrate.min.js" type="text/javascript"></script>
+<!-- IMPORTANT! Load jquery-ui.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+<script src="__PUBLIC__/assets/global/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
+<script src="__PUBLIC__/assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="__PUBLIC__/assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
+<script src="__PUBLIC__/assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+<script src="__PUBLIC__/assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+<script src="__PUBLIC__/assets/global/plugins/jquery.cokie.min.js" type="text/javascript"></script>
+<script src="__PUBLIC__/assets/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
+<script src="__PUBLIC__/assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="__PUBLIC__/assets/global/plugins/select2/select2.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/assets/global/plugins/datatables/media/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/assets/global/plugins/datatables/extensions/TableTools/js/dataTables.tableTools.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/assets/global/plugins/datatables/extensions/ColReorder/js/dataTables.colReorder.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/assets/global/plugins/datatables/extensions/Scroller/js/dataTables.scroller.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.js"></script>
+
+<script src="__PUBLIC__/assets/global/scripts/metronic.js" type="text/javascript"></script>
+<script src="__PUBLIC__/assets/admin/layout/scripts/layout.js" type="text/javascript"></script>
+<script src="__PUBLIC__/assets/admin/layout/scripts/quick-sidebar.js" type="text/javascript"></script>
+<script src="__PUBLIC__/assets/admin/layout/scripts/demo.js" type="text/javascript"></script>
+<script src="__PUBLIC__/assets/admin/pages/scripts/table-advanced.js"></script>
+<script src="__PUBLIC__/assets/admin/pages/scripts/table-editable.js"></script>
+<script>
+    jQuery(document).ready(function () {
+        Metronic.init(); // init metronic core components
+        Layout.init(); // init current layout
+        QuickSidebar.init(); // init quick sidebar
+        TableEditable.init();
+        Layout.setSidebarMenuActiveLink('set', $('#vido'));
+    });
+
+
+</script>
+</body>
+</html>

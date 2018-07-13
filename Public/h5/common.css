@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+input,select{
+    outline: none;
+}
+.index{
+    padding: 20px 30px;
+}
+.index .code{
+    border-bottom: 1px solid #ddd;
+    padding: 14px 0;
+}
+.index .code span{
+    float: right;
+    color: #31aa3b;
+    margin-top: 4px;
+}
+.index .code input::-webkit-input-placeholder,
+.index .phone input::-webkit-input-placeholder {
+	color: #cccccc;
+}
+.index .code-text {
+    color: #333333;
+    font-size: 13px;
+}
+.index .code .encode{
+    float: right;
+    width: 25%;
+    display: inline-block;
+    height: 25px;
+}
+.index .code .encode img{
+    width: 100%;
+    height: 100%;
+}
+.index .phone {
+
+	padding: 14px 0;
+	border-bottom: 1px solid #ddd;
+}
+.index .phone option {
+	color: #333333;
+}
+.index .btn{
+    background: url('image/anniu_tijiao-2x.png');
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    background-size: 100%;
+    margin-top: 30px;
+}
+.index .dowmload-link{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 11px;
+    color: #31aa3b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 27px;
+}
+.index .dowmload-link img{
+    margin-left: 4px;
+    height: 11px;
+}
+.download-warp {
+	width: calc(100vw - 60px);
+	margin: 0 auto;
+}
+.success-warp {
+	text-align: center;
+}
+.success-warp img{
+	width: 70px;
+	margin: 30px 0 25px;
+	/*margin: 0 auto;
+	display: block;*/
+}
+.success-warp p {
+	margin: 0;
+	line-height: 1.2;
+}
+.success-warp .success-text {
+	margin-bottom: 25px;
+	font-size: 18px;
+	color: #000000;
+	font-weight: bold;
+}
+.success-warp .friend {
+	margin-bottom: 10px;
+	font-size: 14px;
+	color: #26a341;
+}
+.success-warp .friend-text {
+	font-size: 12px;
+	color: #666666;
+}
+.download-warp .download-ios {
+	background: url(image/anniu_tijiao-2x.png) no-repeat;
+	width: 100%;
+	border-radius: 4px;
+	margin-top: 30px;
+	margin-bottom: 15px;
+    color: #fff;
+}
+.download-warp .download-android {
+	border: 1px solid #cccccc;
+	width: 100%;
+	border-radius: 4px;
+	color: #666666;
+}
+.download-ios, .download-android{
+	height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+}
+.download-ios img, .download-android img {
+	height: 25px;
+	margin-right: 10px;
+}
+.scan-img {
+	width: 80px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+.scan-text {
+	margin-top: 25px;
+	text-align: center;
+	color: #666666;
+
+}
+.bottom-introduce {
+	margin-top: 30px;
+	margin-bottom: 40px;
+}
+.bottom-introduce .green-line{
+	display: inline-block;
+    width: 2px;
+    height: 17px;
+    background: #31aa3b;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+.bottom-introduce .item-title {
+	font-size: 18px;
+	font-weight: bold;
+	color: #333333;
+}
+.bottom-introduce .introduce-item p {
+	font-size: 14px;
+	color: #666666;
+	line-height: 1.385;
+	margin: 15px;
+}

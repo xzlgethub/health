@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Hello MUI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="__PUBLIC__/mui/css/mui.min.css">
+</head>
+
+<body class="mui-fullscreen">
+<header class="mui-bar mui-bar-nav">
+    <div class="mui-input-row mui-search">
+        <input type="search" class="mui-input-clear" id="searchInput" onkeyup="enterSearch(event)" placeholder="找不到问题？点我搜索" value="{$search}">
+    </div>
+</header>
+<div class="mui-content" style="margin-top: -15px">
+    <volist name="res" id="vo">
+        <ul class="mui-table-view">
+            <li class="mui-table-view-cell mui-collapse">
+                <a class="mui-navigate-right" href="#">{$vo.title}</a>
+                <div class="mui-collapse-content">
+                    <p>{$vo.content}<!--[<a href="#" class="info" id="{$vo.id}">详情</a>]--></p>
+                </div>
+            </li>
+        </ul>
+    </volist>
+</div>
+
+
+</body>
+<script src="__PUBLIC__/mui/js/mui.min.js "></script>
+<script>
+    mui.init();
+    function enterSearch(e) {
+        if(e.keyCode == 13) {
+            var search = mui('#searchInput')[0].value
+
+            mui.openWindow({
+                id: 'index',
+                url: '__CONTROLLER__/index?search='+search,
+                extras: {
+                    search: search
+                }
+            })
+        }
+    }
+    mui('.mui-collapse-content').on('tap','.info',function () {
+        var search = mui('#searchInput')[0].value
+        var id = mui(this)[0].id;
+        console.log(id);
+        mui.openWindow({
+            url:'__CONTROLLER__/info?id='+id,
+            id:'info.html',
+            extras: {
+                search: search
+            }
+        })
+    })
+</script>
+
+</html>

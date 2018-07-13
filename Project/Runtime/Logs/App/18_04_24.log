@@ -1,0 +1,66 @@
+[ 2018-04-24T09:20:25+08:00 ] 127.0.0.1 /project/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001981s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000939s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000987s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001010s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001063s ]
+
+[ 2018-04-24T10:14:30+08:00 ] 127.0.0.1 /project/index.php/App/Mining/userRank
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000605s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000959s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001013s ]
+SQL: SHOW COLUMNS FROM `hl_steps` [ RunTime:0.0127s ]
+SQL: SHOW COLUMNS FROM `hl_steps` [ RunTime:0.0107s ]
+SQL: SELECT hl_steps.uid,hl_steps.steps,hl_steps.rank,hl_steps.life,hl_user.name as rankname,hl_user.thumbpic as rankpic,hl_steps.createtime FROM `hl_steps` LEFT JOIN hl_user ON hl_steps.firstuid = hl_user.id  WHERE `uid` = '100002' ORDER BY hl_steps.createtime desc LIMIT 0,15   [ RunTime:0.0009s ]
+
+[ 2018-04-24T10:14:36+08:00 ] 127.0.0.1 /project/index.php/App/Mining/userRank
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000598s ]
+SQL: SHOW COLUMNS FROM `hl_steps` [ RunTime:0.0123s ]
+SQL: SHOW COLUMNS FROM `hl_steps` [ RunTime:0.0107s ]
+SQL: SELECT hl_steps.uid,hl_steps.steps,hl_steps.rank,hl_steps.life,hl_user.name as rankname,hl_user.thumbpic as rankpic,hl_steps.createtime FROM `hl_steps` LEFT JOIN hl_user ON hl_steps.firstuid = hl_user.id  WHERE `uid` = '1' ORDER BY hl_steps.createtime desc LIMIT 0,15   [ RunTime:0.0006s ]
+
+[ 2018-04-24T10:14:52+08:00 ] 127.0.0.1 /project/index.php/App/Mining/userRank
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000702s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000830s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000913s ]
+SQL: SHOW COLUMNS FROM `hl_steps` [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `hl_steps` [ RunTime:0.0170s ]
+SQL: SELECT hl_steps.uid,hl_steps.steps,hl_steps.rank,hl_steps.life,hl_user.name as rankname,hl_user.thumbpic as rankpic,hl_steps.createtime FROM `hl_steps` LEFT JOIN hl_user ON hl_steps.firstuid = hl_user.id  WHERE `uid` = '1' ORDER BY hl_steps.createtime desc LIMIT 0,15   [ RunTime:0.0007s ]
+
+[ 2018-04-24T10:15:47+08:00 ] 127.0.0.1 /project/index.php/App/Mining/userRank
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000614s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000789s ]
+SQL: SHOW COLUMNS FROM `hl_steps` [ RunTime:0.0133s ]
+SQL: SHOW COLUMNS FROM `hl_steps` [ RunTime:0.0106s ]
+SQL: SELECT hl_steps.uid,hl_steps.steps,hl_steps.rank,hl_steps.life,hl_user.name as rankname,hl_user.thumbpic as rankpic,hl_steps.createtime FROM `hl_steps` LEFT JOIN hl_user ON hl_steps.firstuid = hl_user.id  WHERE `uid` = '1' ORDER BY hl_steps.createtime desc LIMIT 0,15   [ RunTime:0.0005s ]
+
+[ 2018-04-24T22:58:07+08:00 ] 127.0.0.1 /project/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009581s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001729s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001226s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001318s ]
+

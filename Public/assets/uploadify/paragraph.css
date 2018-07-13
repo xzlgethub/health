@@ -1,0 +1,31 @@
+/*
+段落添加修改中标签样式
+*/
+
+#tags{
+	overflow: auto;
+	padding: 0 5px;
+	box-sizing: border-box;
+}
+#tags label{
+	float: left;
+	margin:6px 3px;
+	display: inline-block;
+}
+#tags label input{
+	display: none;
+}
+#tags label span{
+	background: #fff;
+	border:1px solid #CCCCCC;
+	box-sizing: border-box;
+	color: #000;
+	padding: 3px 5px;
+	-webkit-border-radius: 2px !important;
+	-moz-border-radius: 2px !important;
+	border-radius: 2px !important;
+}
+#tags label input:checked + span{
+	background: #00b6ff;
+	color: #fff3e1;
+}

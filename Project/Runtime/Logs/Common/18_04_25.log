@@ -1,0 +1,18 @@
+[ 2018-04-25T09:20:27+08:00 ] 127.0.0.1 /project/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000672s ]
+ERR: 无法加载模块:Favicon
+
+[ 2018-04-25T09:20:33+08:00 ] 127.0.0.1 /project/Public/assets/global/scripts/Chart.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000728s ]
+ERR: 无法加载模块:Public
+
+[ 2018-04-25T09:20:33+08:00 ] 127.0.0.1 /project/Public/assets/global/scripts/Chart.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000720s ]
+ERR: 无法加载模块:Public
+

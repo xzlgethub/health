@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>平台管理</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta content="" name="description"/>
+    <meta content="" name="Ruleor"/>
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="__PUBLIC__/assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="__PUBLIC__/assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
+    <link href="__PUBLIC__/assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="__PUBLIC__/assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css"/>
+    <link href="__PUBLIC__/assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css"/>
+    <!-- END GLOBAL MANDATORY STYLES -->
+    <!-- BEGIN THEME STYLES -->
+    <link href="__PUBLIC__/assets/global/css/components.css" id="style_components" rel="stylesheet" type="text/css"/>
+    <link href="__PUBLIC__/assets/global/css/plugins.css" rel="stylesheet" type="text/css"/>
+    <link href="__PUBLIC__/assets/admin/layout/css/layout.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/assets/global/plugins/bootstrap-summernote/summernote.css">
+    <link id="style_color" href="__PUBLIC__/assets/admin/layout/css/themes/darkblue.css" rel="stylesheet" type="text/css"/>
+    <link href="__PUBLIC__/assets/admin/layout/css/custom.css" rel="stylesheet" type="text/css"/>
+    <!-- END THEME STYLES -->
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <style>
+        .portlet.light.bordered {
+            border: 0px solid #e1e1e1 !important;
+        }
+    </style>
+</head>
+<body class="page-header-fixed page-quick-sidebar-over-content ">
+<!-- BEGIN HEADER -->
+<include file="Public/head" />
+<!-- END HEADER -->
+<div class="clearfix">
+</div>
+<!-- BEGIN CONTAINER -->
+<div class="page-container">
+    <!-- BEGIN SIDEBAR -->
+    <div class="page-sidebar-wrapper">
+        <div class="page-sidebar navbar-collapse collapse">
+            <ul class="page-sidebar-menu" data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
+                <include file="Public/common" />
+            </ul>
+        </div>
+    </div>
+    <!-- END SIDEBAR -->
+    <!-- BEGIN CONTENT -->
+    <div class="page-content-wrapper">
+        <div class="page-content">
+            <div class="page-bar" style="margin-bottom:20px;margin-top:-10px;">
+                <ul class="page-breadcrumb">
+                    <li>
+                        <i class="fa fa-home"></i>
+                        <a href="__MODULE__/Faq/index">常见问题管理</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-angle-right"></i>
+                        <small style="color:#888888">常见问题修改</small>
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="portlet light portlet-fit portlet-datatable bordered" id="form_wizard_1">
+                        <div class="portlet-title">
+                            <div class="caption">
+                                <i class="fa fa-globe"></i>常见问题修改
+                            </div>
+                        </div>
+                        <div class="portlet-body">
+                            <form role="form" class="form-horizontal form" action="__CONTROLLER__/editAction" method="post" enctype="multipart/form-data">
+                                <div class="form-body">
+                                    <div class="form-group" style="margin-top:10px">
+                                        <label class="control-label col-md-2">标题</label>
+                                        <div class="col-md-10">
+                                            <input type="text" id="" class="form-control" name="title" placeholder="请输入标题" value="{$res.title}">
+                                            <span class="tip"></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-md-2">内容</label>
+                                        <div class="col-md-10">
+                                            <textarea id="content" class="form-control" name="content" style="height: 300px" placeholder="请输入内容">{$res.content}</textarea>
+                                            <span class="tip"></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group" style="margin-top:10px">
+                                        <label class="control-label col-md-2">权重</label>
+                                        <div class="col-md-10">
+                                            <input type="text" id="weight" class="form-control" name="weight" placeholder="输入数字，数字越大排名靠前" value="{$res.weight}">
+                                            <span class="tip"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group" style="margin-top:10px;">
+                                        <div class="col-md-3 col-md-offset-1"></div>
+                                        <div class="col-md-4">
+                                            <input type="hidden" name="id" id="id" value="{$res.id}">
+                                            <input type="hidden" name="p" id="p" value="{$p}">
+                                            <input type="hidden" name="sele" id="sele" value="{$sele}">
+                                            <input type="submit" value="添加" class="btn btn-success" style='width:100px;'/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- END EXAMPLE TABLE PORTLET-->
+                </div>
+            </div>
+            <!-- END PAGE CONTENT-->
+        </div>
+    </div>
+    <!-- END CONTENT -->
+</div>
+
+<include file="Public/foot" />
+
+<script src="__PUBLIC__/assets/global/plugins/respond.min.js"></script>
+<script src="__PUBLIC__/assets/global/plugins/excanvas.min.js"></script>
+
+<script src="__PUBLIC__/assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+<script src="__PUBLIC__/assets/global/plugins/jquery-migrate.min.js" type="text/javascript"></script>
+<!-- IMPORTANT! Load jquery-ui.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+<script src="__PUBLIC__/assets/global/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
+<script src="__PUBLIC__/assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="__PUBLIC__/assets/global/plugins/select2/select2.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/assets/global/plugins/datatables/media/js/jquery.dataTables.min.js"></script>
+<!--验证js-->
+<script src="__PUBLIC__/assets/global/plugins/jquery-validation/js/jquery.validate.js" type="text/javascript"></script>
+
+<!--开始页面级别的脚本-->
+<script src="__PUBLIC__/assets/global/scripts/metronic.js" type="text/javascript"></script>
+<script src="__PUBLIC__/assets/admin/layout/scripts/layout.js" type="text/javascript"></script>
+<script>
+    jQuery(document).ready(function() {
+        Metronic.init(); // init metronic core components
+        Layout.init(); // init current layout
+        Layout.setSidebarMenuActiveLink('set', $('#faq'));
+    });
+</script>
+<!--上传图片限制-->
+<script type="text/javascript">
+    file = document.getElementById('file');
+    file.addEventListener('change',function(){
+        size = this.files[0].size/1024
+        console.log(size+'KB')
+
+        // 如果大于2048KB
+        if(size>2048){
+            submit.disabled=true;
+            if(confirm("图片过大！！！")){
+                //跳转网页,并携带参数
+                //window.location="__CONTROLLER__/delTypeAction/id/"+id;
+            }
+        }else{
+            // 小于等于2048
+            submit.disabled=false;
+        }
+    })
+</script>
+<script>
+    $(function () {
+        $(".form-horizontal").validate({
+            /*自定义验证规则*/
+            rules:{
+                title:{ required:true },
+                content:{ required:true },
+                weight:{ required:true },
+            },messages: {
+                title: {
+                    required: "<span style='color:red;'>请输入标题名称！</span>"　　//注意，同样是必填项，但是优先显示在messages里的提示信息
+                },
+                content: {
+                    required: "<span style='color:red;'>请输入内容！</span>"　　//注意，同样是必填项，但是优先显示在messages里的提示信息
+                },
+                weight: {
+                    required: "<span style='color:red;'>请输入权重级别！</span>"　　//注意，同样是必填项，但是优先显示在messages里的提示信息
+                }
+            },
+        });
+    })
+</script>
+<input type='hidden' value='<{$errorid}>' id='errorid' />
+</body>
+<!-- END BODY -->
+</html>

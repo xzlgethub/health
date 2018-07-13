@@ -1,0 +1,120 @@
+<style>
+    * {
+        font-family: '微软雅黑';
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: '微软雅黑';
+    }
+
+    #sample_6_filter label {
+        margin-left: 345px;
+    }
+</style>
+<script src="__PUBLIC__/assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+<div class="page-header navbar navbar-fixed-top" style="">
+    <div class="page-header-inner">
+        <div class="page-logo col-md-2">
+            <img src="__PUBLIC__/{$_SESSION['users']['logo']}" style="margin-top:-4px;width:140px;"/>
+        </div>
+        <div class="page-top">
+            <div class="top-menu">
+                <ul class="nav navbar-nav pull-right">
+                    <li class="dropdown dropdown-user">
+                        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"
+                           data-close-others="true">
+                            <img alt="" class="img-circle" src="__PUBLIC__/assets/admin/layout/img/avatar3_small.jpg"/>
+                            <span class="username username-hide-on-mobile">{$_SESSION['users']['name']} </span>
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-default" style="min-width: 130px;width: 130px;">
+                            <li id="mm" role="presentation">
+                                <a data-toggle="modal" data-target="#myModal"><i class="icon-lock"></i> 修改密码</a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="__APP__/Manage/Login/logout"><i
+                                        class="icon-key"></i> 退出</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="myModal" class="modal fade" role="dialog" aria-labelledby="gridSystemModalLabel" aria-hidden="true"
+     style="background-color:#bbb;opacity: 0.9;height:1000px;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="gridSystemModalLabel" style="font-family:'微软雅黑';">修改密码</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row" style="padding-top:10px;">
+                    <div class="col-md-2 col-md-offset-2"><h5 style="font-family:'微软雅黑';">原密码</h5></div>
+                    <div class="col-md-4">
+                        <input id="pwd" type="password" name="pwd" class="form-control"/>
+                    </div>
+                </div>
+                <div class="row" style="padding-top:10px;">
+                    <div class="col-md-2 col-md-offset-2"><h5 style="font-family:'微软雅黑';">新密码</h5></div>
+                    <div class="col-md-4">
+                        <input id="newpwd" type="password" name="newpwd" class="form-control"/>
+                    </div>
+                </div>
+                <div class="row" style="padding-top:10px;">
+                    <div class="col-md-2 col-md-offset-2"><h5 style="font-family:'微软雅黑';">重复密码</h5></div>
+                    <div class="col-md-4">
+                        <input id="repwd" type="password" name="repwd" class="form-control"/>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="col-md-5">
+                    <span id="span" style="font-family:'微软雅黑';color:red;"></span>
+                </div>
+                <input id="uid" type="hidden" name="id" value="<{$_SESSION['users']['id']}>"/>
+                <input type="button" value="关闭" style="font-family:'微软雅黑';" class="btn btn-default"
+                       data-dismiss="modal"/>
+                <input id="sub" type="submit" value="保存" style="font-family:'微软雅黑';" class="btn btn-primary"/>
+
+                <script>
+                    $(function () {
+                        $('#mm').click(function () {
+                            $('#span').text('');
+                        })
+
+                        $('#sub').click(function () {
+                            var pwd = $('#pwd').val();
+                            var newpwd = $('#newpwd').val();
+                            var repwd = $('#repwd').val();
+                            if (newpwd == repwd) {
+                                var reg = /^[0-9A-Za-z]{5,50}$/;
+                                if (reg.test(newpwd)) {
+                                    $.post("__APP__/Manage/Login/editpass", {
+                                        pass: pwd,
+                                        newpass: newpwd,
+                                        repass: repwd
+                                    }, function (data) {
+                                        if (data == 1) {
+                                            alert("修改成功");
+                                            window.location.href = "__APP__/Manage/Login/logout";
+                                        } else {
+                                            $('#span').text(data);
+                                        }
+                                    })
+                                } else {
+                                    $("#span").text("密码不应低于5位");
+                                }
+                            } else {
+                                $("#span").text("两次密码不一致");
+                            }
+                        })
+                    })
+                </script>
+            </div>
+        </div>
+    </div>
+</div>

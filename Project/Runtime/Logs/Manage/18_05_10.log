@@ -1,0 +1,338 @@
+[ 2018-05-10T12:10:22+08:00 ] ::1 /health/index.php/Manage/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: SQLSTATE[HY000] [1049] Unknown database 'project'
+
+[ 2018-05-10T12:27:00+08:00 ] ::1 /health/index.php/Manage/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: SQLSTATE[HY000] [1049] Unknown database 'project'
+
+[ 2018-05-10T13:11:43+08:00 ] ::1 /health/index.php/Manage/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hl_user` [ RunTime:0.1030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hl_user` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `hl_feedback` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hl_feedback` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hl_faq` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hl_faq` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hl_steps` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hl_steps` WHERE ( createtime like '2018-05-10%' ) LIMIT 1   [ RunTime:0.1000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: users D:\PHPTutorial\WWW\health\Project\Runtime\Cache\Manage\63b65c1c2187b2756180f2ae214e93cf.php 第 55 行.
+NOTIC: [8] Undefined index: users D:\PHPTutorial\WWW\health\Project\Runtime\Cache\Manage\63b65c1c2187b2756180f2ae214e93cf.php 第 64 行.
+NOTIC: [8] Undefined index: users D:\PHPTutorial\WWW\health\Project\Runtime\Cache\Manage\63b65c1c2187b2756180f2ae214e93cf.php 第 115 行.
+NOTIC: [8] Undefined index: users D:\PHPTutorial\WWW\health\Project\Runtime\Cache\Manage\63b65c1c2187b2756180f2ae214e93cf.php 第 435 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.637037s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.637037s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.049003s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.049003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-05-10T13:11:47+08:00 ] ::1 /health/index.php/Manage/Index/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-10T13:15:50+08:00 ] ::1 /health/index.php/Manage/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.025001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.025001s ]
+SQL: SHOW COLUMNS FROM `hl_user` [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hl_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hl_feedback` [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hl_feedback` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hl_faq` [ RunTime:0.0130s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hl_faq` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hl_steps` [ RunTime:0.0140s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hl_steps` WHERE ( createtime like '2018-05-10%' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: users D:\PHPTutorial\WWW\health\Project\Runtime\Cache\Manage\63b65c1c2187b2756180f2ae214e93cf.php 第 55 行.
+NOTIC: [8] Undefined index: users D:\PHPTutorial\WWW\health\Project\Runtime\Cache\Manage\63b65c1c2187b2756180f2ae214e93cf.php 第 64 行.
+NOTIC: [8] Undefined index: users D:\PHPTutorial\WWW\health\Project\Runtime\Cache\Manage\63b65c1c2187b2756180f2ae214e93cf.php 第 115 行.
+NOTIC: [8] Undefined index: users D:\PHPTutorial\WWW\health\Project\Runtime\Cache\Manage\63b65c1c2187b2756180f2ae214e93cf.php 第 435 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.213012s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.213012s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.022001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.022001s ]
+
+[ 2018-05-10T13:23:36+08:00 ] ::1 /health/index.php/Manage/Copyright/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008000s ]
+
+[ 2018-05-10T13:23:37+08:00 ] ::1 /health/index.php/Manage/Copyright/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-10T13:23:37+08:00 ] ::1 /health/index.php/Manage/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `hl_logo` [ RunTime:0.0260s ]
+SQL: SELECT * FROM `hl_logo` WHERE ( state=1 ) LIMIT 1   [ RunTime:0.0270s ]
+SQL: SHOW COLUMNS FROM `hl_copyright` [ RunTime:0.0300s ]
+SQL: SELECT * FROM `hl_copyright` LIMIT 1   [ RunTime:0.0130s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: status D:\PHPTutorial\WWW\health\Project\Runtime\Cache\Manage\acc83392708bb2d17d7193f51786db48.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.205012s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.205012s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.038003s ]
+INFO: [ app_end ] --END-- [ RunTime:0.038003s ]
+
+[ 2018-05-10T13:23:55+08:00 ] ::1 /health/index.php/Manage/Login/vadataajax?name=admin&pass=123456
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `hl_adminuser` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `hl_adminuser` WHERE `username` = 'admin' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.3620s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-10T13:23:55+08:00 ] ::1 /health/index.php/Manage/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `hl_adminuser` [ RunTime:0.0170s ]
+SQL: SHOW COLUMNS FROM `hl_adminuser` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `hl_adminuser` WHERE `username` = 'admin' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `hl_logo` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `hl_logo` WHERE ( state=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hl_copyright` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `hl_copyright` LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-05-10T13:23:55+08:00 ] ::1 /health/index.php/Manage/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `hl_user` [ RunTime:0.0180s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hl_user` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hl_feedback` [ RunTime:0.0140s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hl_feedback` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hl_faq` [ RunTime:0.0170s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hl_faq` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hl_steps` [ RunTime:0.0160s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hl_steps` WHERE ( createtime like '2018-05-10%' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.079005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.079005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-10T13:24:03+08:00 ] ::1 /health/index.php/Manage/Copyright/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `hl_copyright` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `hl_copyright` LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: state D:\PHPTutorial\WWW\health\Project\Runtime\Cache\Manage\b2f39ea94067d8885de12c7c57f4768d.php 第 324 行.
+NOTIC: [8] Undefined index: state D:\PHPTutorial\WWW\health\Project\Runtime\Cache\Manage\b2f39ea94067d8885de12c7c57f4768d.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2018-05-10T13:24:05+08:00 ] ::1 /health/index.php/Manage/Copyright/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-10T13:24:14+08:00 ] ::1 /health/index.php/Manage/Copyright/edit/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `hl_copyright` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `hl_copyright` WHERE ( id = '1' ) LIMIT 1   [ RunTime:0.0280s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-10T13:24:15+08:00 ] ::1 /health/index.php/Manage/Copyright/edit/id/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+
+[ 2018-05-10T13:24:20+08:00 ] ::1 /health/index.php/Manage/Faq/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `hl_faq` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `hl_faq` ORDER BY weight desc LIMIT 0,10   [ RunTime:0.1420s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hl_faq` LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-10T13:24:21+08:00 ] ::1 /health/index.php/Manage/Faq/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-05-10T13:24:41+08:00 ] ::1 /health/index.php/Manage/My/aboutus
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `hl_about_us` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `hl_about_us` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hl_about_us` LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-10T13:24:41+08:00 ] ::1 /health/index.php/Manage/My/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2018-05-10T18:22:03+08:00 ] ::1 /health/index.php/Manage/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.018001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.016001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016001s ]
+SQL: SHOW COLUMNS FROM `hl_user` [ RunTime:0.0260s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hl_user` LIMIT 1   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `hl_feedback` [ RunTime:0.0260s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hl_feedback` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hl_faq` [ RunTime:0.0140s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hl_faq` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hl_steps` [ RunTime:0.0220s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hl_steps` WHERE ( createtime like '2018-05-10%' ) LIMIT 1   [ RunTime:0.0210s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.165009s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.165009s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.021001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.021001s ]
+
+[ 2018-05-10T18:22:04+08:00 ] ::1 /health/index.php/Manage/Index/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-10T18:22:25+08:00 ] ::1 /health/index.php/Manage/Index/script
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:script
+

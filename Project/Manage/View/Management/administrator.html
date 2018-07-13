@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>平台管理</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta content="" name="description"/>
+    <meta content="" name="author"/>
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="__PUBLIC__/assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="__PUBLIC__/assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
+    <link href="__PUBLIC__/assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="__PUBLIC__/assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css"/>
+    <link href="__PUBLIC__/assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css"/>
+    <!-- END GLOBAL MANDATORY STYLES -->
+    <!-- BEGIN PAGE LEVEL STYLES -->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/assets/global/plugins/select2/select2.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/assets/global/plugins/datatables/extensions/Scroller/css/dataTables.scroller.min.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/assets/global/plugins/datatables/extensions/ColReorder/css/dataTables.colReorder.min.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.css"/>
+    <!-- END PAGE LEVEL STYLES -->
+    <!-- BEGIN THEME STYLES -->
+    <link href="__PUBLIC__/assets/global/css/components.css" id="style_components" rel="stylesheet" type="text/css"/>
+    <link href="__PUBLIC__/assets/global/css/plugins.css" rel="stylesheet" type="text/css"/>
+    <link href="__PUBLIC__/assets/admin/layout/css/layout.css" rel="stylesheet" type="text/css"/>
+    <link id="style_color" href="__PUBLIC__/assets/admin/layout/css/themes/darkblue.css" rel="stylesheet" type="text/css"/>
+    <link href="__PUBLIC__/assets/admin/layout/css/custom.css" rel="stylesheet" type="text/css"/>
+    <!-- END THEME STYLES -->
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <style type="text/css">
+        .portlet.light.bordered {
+            border: 0px solid #e1e1e1 !important;
+        }
+
+        .pages a,.pages span {
+            display:inline-block;
+            padding:2px 5px;
+            margin:0 1px;
+            border:1px solid #f0f0f0;
+            -webkit-border-radius:3px;
+            -moz-border-radius:3px;
+            border-radius:3px;
+        }
+        .pages a,.pages li {
+            display:inline-block;
+            list-style: none;
+            text-decoration:none; color:#58A0D3;
+        }
+        .pages a.first,.pages a.prev,.pages a.next,.pages a.end{
+            margin:0;
+        }
+        .pages a:hover{
+            border-color:#50A8E6;
+        }
+        .pages span.current{
+            background:#50A8E6;
+            color:#FFF;
+            font-weight:700;
+            border-color:#50A8E6;
+        }
+    </style>
+</head>
+<body class="page-header-fixed page-quick-sidebar-over-content ">
+<!-- BEGIN HEADER -->
+<include file="Public/head" />
+<!-- END HEADER -->
+<div class="clearfix">
+</div>
+<div class="page-container">
+    <div class="page-sidebar-wrapper">
+        <div class="page-sidebar navbar-collapse collapse">
+            <ul class="page-sidebar-menu" data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
+                <include file="Public/common" />
+            </ul>
+        </div>
+    </div>
+
+    <div class="page-content-wrapper">
+        <div class="page-content">
+            <div class="page-bar" style="margin-bottom:20px;margin-top:-10px;">
+                <ul class="page-breadcrumb">
+                    <li>
+                        <i class="fa fa-home"></i>
+                        <a href="__MODULE__/Management/administrator">管理员管理</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-angle-right"></i>
+                        <small style="color:#888888">管理员预览</small>
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="portlet light portlet-fit portlet-datatable bordered" id="form_wizard_1">
+                        <div class="portlet-title">
+                            <div class="caption">
+                                <i class="fa fa-globe"></i>管理员预览
+                            </div>
+                        </div>
+                        <div class="portlet-body">
+                            <div class="row">
+                                <div class="col-md-3 col-md-push-0">
+                                    <if condition="RuleCheck('Manage/Management/add',$_SESSION['uid'])">
+                                        <div class="btn-group">
+                                            <a class="btn red-intense" href="__CONTROLLER__/add"><i class="fa fa-plus"></i> 管理员</a>
+                                        </div>
+                                    </if>
+                                </div>
+                                <div class="col-md-5 col-md-push-4">
+                                    <div class="row">
+                                        <form action="__CONTROLLER__/administrator" method="get">
+                                            <div class="col-md-6 col-md-push-5" >
+                                                <input type="hidden" name="type" value="1">
+                                                <input type="text" name="sele" placeholder="帐号/姓名/联系方式" class="form-control" value="{$sele}">
+                                            </div>
+                                            <div class="col-md-1 col-md-push-4" style="margin-left:-12px">
+                                                <input type="hidden" value="1" name="p">
+                                                <input type="submit" value="搜索" class="btn btn-success"/>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <table class="table table-striped table-bordered table-hover" style="margin-top:10px">
+                                <thead>
+                                <tr>
+                                    <th>序号</th>
+                                    <th>帐号</th>
+                                    <th>姓名</th>
+                                    <th>联系方式</th>
+                                    <th>角色组</th>
+                                    <th>注册时间</th>
+                                    <th>操作</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <foreach name="res" item="res" >
+                                    <tr>
+                                        <td>{$res.id}</td>
+                                        <td>{$res.username}</td>
+                                        <td>{$res.name}</td>
+                                        <td>{$res.phone}</td>
+                                        <td>{$res.typename}</td>
+                                        <td>{$res.time}</td>
+                                        <td>
+                                            <if condition="RuleCheck('Manage/Management/edit',$_SESSION['uid'])">
+                                                <a href="__CONTROLLER__/edit/id/{$res.id}/p/{$page}/sele/{$sele}">修改</a> |
+                                            </if>
+                                            <!--<if condition="RuleCheck('Manage/Management/repassword',$_SESSION['uid'])">
+                                                <a href="javascript:repassword(<{$res.id}>);">重置密码</a> |
+                                            </if>-->
+                                            <if condition="RuleCheck('Manage/Management/del',$_SESSION['uid'])">
+                                                <a href="javascript:del({$res.id},{$page},{$sele});">删除 </a>
+                                            </if>
+                                        </td>
+                                    </tr>
+                                </foreach>
+                                </tbody>
+                            </table>
+                            <div class="row">
+                                <div class="col-md-10 col-md-push-3">
+                                            <div class="pages">
+                                                {$show}
+                                            </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<include file="Public/foot" />
+
+<script src="__PUBLIC__/assets/global/plugins/respond.min.js"></script>
+<script src="__PUBLIC__/assets/global/plugins/excanvas.min.js"></script>
+<![endif]-->
+<script src="__PUBLIC__/assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+<script src="__PUBLIC__/assets/global/plugins/jquery-migrate.min.js" type="text/javascript"></script>
+<!-- IMPORTANT! Load jquery-ui.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+<script src="__PUBLIC__/assets/global/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
+<script src="__PUBLIC__/assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="__PUBLIC__/assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
+<script src="__PUBLIC__/assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+<script src="__PUBLIC__/assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+<script src="__PUBLIC__/assets/global/plugins/jquery.cokie.min.js" type="text/javascript"></script>
+<script src="__PUBLIC__/assets/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
+<script src="__PUBLIC__/assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="__PUBLIC__/assets/global/plugins/select2/select2.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/assets/global/plugins/datatables/media/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/assets/global/plugins/datatables/extensions/TableTools/js/dataTables.tableTools.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/assets/global/plugins/datatables/extensions/ColReorder/js/dataTables.colReorder.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/assets/global/plugins/datatables/extensions/Scroller/js/dataTables.scroller.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.js"></script>
+
+<script src="__PUBLIC__/assets/global/scripts/metronic.js" type="text/javascript"></script>
+<script src="__PUBLIC__/assets/admin/layout/scripts/layout.js" type="text/javascript"></script>
+<script src="__PUBLIC__/assets/admin/layout/scripts/quick-sidebar.js" type="text/javascript"></script>
+<script src="__PUBLIC__/assets/admin/layout/scripts/demo.js" type="text/javascript"></script>
+<script src="__PUBLIC__/assets/admin/pages/scripts/table-advanced.js"></script>
+<script src="__PUBLIC__/assets/admin/pages/scripts/table-editable.js"></script>
+<script>
+    jQuery(document).ready(function () {
+        Metronic.init(); // init metronic core components
+        Layout.init(); // init current layout
+        QuickSidebar.init(); // init quick sidebar
+        TableEditable.init();
+        Layout.setSidebarMenuActiveLink('set', $('#admin'));
+    });
+</script>
+<script>
+    function del(id,p,sele){
+        if(sele=='' || sele==undefined){
+            sele = '';
+        }
+        if(confirm("确定要删除该条数据吗？")){
+            //跳转网页,并携带参数
+            window.location="__CONTROLLER__/del/id/"+id+"/p/"+p+"/sele/"+sele;
+        }
+    }
+
+</script>
+</body>
+</html>
